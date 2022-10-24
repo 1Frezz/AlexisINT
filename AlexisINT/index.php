@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/img/logo int.png" type="image/x-icon">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="css/hero-slider.css">
@@ -178,7 +178,7 @@
                 <div class="col-md-6">
                     <div class="contact-form">
                         <div class="row">
-                            <form id="contact" action="" method="post">
+                            <form id="contact" action="contact.php" method="post">
                                 <div class="row">
                                     <div class="col-md-12">
                                       <fieldset>
@@ -187,9 +187,32 @@
                                     </div>
                                     <div class="col-md-12">
                                         <fieldset>
-                                          <input name="surname" type="text" class="form-control" id="name" placeholder="Apellido" required="">
+                                          <input name="surname" type="text" class="form-control" id="surname" placeholder="Apellido" required="">
                                         </fieldset>
                                       </div>
+                                      <div class="col-md-12">
+                                        <fieldset>
+                                          <input name="dni" type="number" class="form-control" id="dni" placeholder="DNI" required="">
+                                        </fieldset>
+                                      </div>
+                                      <div class="col-md-12">
+                                        <fieldset>
+                                          <input name="nacionality" type="text" class="form-control" id="nacionality" placeholder="Nacionalidad" required="">
+                                        </fieldset>
+                                      </div>
+                                      <div class="col-md-12">
+                                        <fieldset>
+                                          <input name="phone" type="number" class="form-control" id="phone" placeholder="Teléfono" required="">
+                                        </fieldset>
+                                      </div>
+                                      <style>
+                                        #label-destino {
+                                            color: white;
+                                        }
+                                        #destino-sl{
+                                            margin-bottom: 15px;
+                                        }
+                                      </style>
                                       <div class="col-md-12" id="destino">
                                         <label id="label-destino">Destino:</label> <br>
                                         <select name="destino" id="destino-sl">
@@ -197,20 +220,16 @@
                                             <option value="cuba10n">Cuba - 10 Noches</option>
                                             <option value="laguna">Laguna - Brasil</option>
                                           </optgroup>
-                                      </div>
+                                      </div> 
+                                      
                                     <div class="col-md-12">
                                       <fieldset>
-                                        <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="Email" required="">
                                       </fieldset>
                                     </div>
                                     <div class="col-md-12">
                                       <fieldset>
-                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                                      </fieldset>
-                                    </div>
-                                    <div class="col-md-12">
-                                      <fieldset>
-                                        <button type="submit" id="form-submit" class="btn">Send Message</button>
+                                        <button type="submit" id="form-submit" class="btn">Enviar Reserva!</button>
                                       </fieldset>
                                     </div>
                                 </div>
@@ -239,14 +258,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="primary-button">
-                        <a href="#home">Back To Top</a>
+                        <a href="#home">Volver Arriba</a>
                     </div>
                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+                        <li><a href="https://www.instagram.com/alexisevt_international/"><i class="fa fa-instagram"></i></a></li>
+                        <!-- <li><a href="#"><i class="fa fa-google"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
                     </ul>
                     <p>Copyright &copy; 2022 AlexisInternational 
                 </div>
