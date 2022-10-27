@@ -178,7 +178,7 @@
                 <div class="col-md-6">
                     <div class="contact-form">
                         <div class="row">
-                            <form id="contact" action="" method="post">
+                            <form id="contact" method="post" action="sent.php">
                                 <div class="row">
                                     <div class="col-md-12">
                                       <fieldset>
@@ -234,23 +234,9 @@
                                     </div>
                                 </div>
                             </form>
-                            <a href="mailto:reservas@alexis-evt.tur.ar" id="trucazo"></a>
                         </div>
                     </div>
                 </div>
-                <script>
-                    const $form = document.querySelector('#form')
-                    const $buttonMailto = document.querySelector('#trucazo')
-                
-                    $form.addEventListener('submit', handleSubmit)
-                
-                    function handleSubmit(event) {
-                      event.preventDefault()
-                      const form = new FormData(this)
-                      $buttonMailto.setAttribute('href', `mailto:reservas@alexis-evt.tur.ar?subject= 'Reserva Web' &body=nombre ${form.get('name')} apeliido ${form.get('surname')} dni ${form.get('dni')} nacionalidad ${form.get('nacionality')} telefono ${form.get('phone')} correo ${form.get('email')}`)
-                      $buttonMailto.click()
-                    }
-                  </script>
                 <div class="col-md-6">
                     <div class="map">
                     <!-- How to change your own map point
